@@ -34,9 +34,9 @@ const Arrivals = () => {
     ]
 
     const [transition, setTransition] = useState(false);
-  return (
+return (
     <>
-      <div>
+    <div>
         <div className='mx-auto container flex justify-between mb-6 mt-10'>
             <p className='p-5'>
                 <h1 className='uppercase text-2xl'>Our New Arrivals</h1>
@@ -46,7 +46,7 @@ const Arrivals = () => {
             </p>
         </div>
 
-        <div className='grid grid-cols-4 mx-auto container mb-10'> 
+        <div className='grid gap-4 sm:grid-cols-4 grid-cols-2 mx-auto container mb-10'> 
             {arrivals.map((arrivals, index) => (
             <div key={index} className='group'>
                     <img className='group-hover:scale-95 transition-all duration-300 ease-in-out' src={arrivals.imgUrl} alt="" width={350}/>
@@ -56,9 +56,9 @@ const Arrivals = () => {
             </div>
             ))}
         </div>
-      </div>
+    </div>
     </>
-  )
+)
 }
 
 export default Arrivals

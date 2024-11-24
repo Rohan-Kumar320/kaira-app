@@ -27,7 +27,7 @@ const Items = () => {
                 <p className='text-center font-bold text-3xl'>New Collections</p>
                 <p className='text-center mt-2 text-xl font-light text-gray-400'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptate dolorem nulla inventore, totam itaque. Est ut asperiores, voluptas inventore molestias magnam.</p>
             </div>
-            <div className='grid grid-cols-3 container mx-auto mt-28'>
+            <div className='grid gap-6 sm:grid-cols-3 container mx-8 mt-28'>
                 {items.map((data ,index) => (
                     <div className='max-w-96' key={index}>
                         <img src={data.imgURL} alt="" width={350} />

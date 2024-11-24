@@ -20,7 +20,7 @@ const Categories = () => {
     ]
   return (
     <>
-      <div className='grid grid-cols-3 mx-auto container mt-10'>
+      <div className='grid gap-4 sm:grid-cols-3 grid-cols-2 mx-auto container mt-10'>
 
     {categories.map((cate,index) => (
         <div key={index}>
